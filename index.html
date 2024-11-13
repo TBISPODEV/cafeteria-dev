@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projeto cafeteria</title>
+  </head>
+  <body>
+    <div class="caixa-video">
+      <video src="./videos/coffe.mp4" loop muted autoplay></video>
+      <div class="mascara"></div>
+    </div>
+    <header class="header">
+      <section>
+        <a href="#">
+          <img src="./img/logo.png" alt="logo-cafeteria" />
+        </a>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Sobre</a>
+          <a href="#" onclick="mostrarModal()">Endereço</a>
+        </nav>
+      </section>
+    </header>
+
+    <section class="caixa-principal">
+      <div>
+        <h3>Code com o Melhor café da Região</h3>
+        <p>
+          Que sua manhã seja doce, leve, com gosto de café quente e cheiro de
+          poesia.
+        </p>
+        <a class="botao-link">Pegue o seu agora</a>
+      </div>
+    </section>
+
+    <section class="caixa-sobre">
+      <h2 class="titulo"><span>Sobre</span> Nós</h2>
+      <div class="sobre-container">
+        <div class="sobre-imagem">
+          <img src="./img/about-img.jpeg" />
+        </div>
+
+        <div class="sobre-texto">
+          <h3>O que faz nosso café especial?</h3>
+          <p>
+            São os grãos isento de impurezas e defeitos que possuem atributos
+            sensoriais diferenciados. Estes atributos,incluem bebida limpa e
+            doce, corpo e acidez equilibrados.
+          </p>
+          <p>Qualificam sua bebida acima dos 80 pontos na análise sensorial!</p>
+          <a class="botao-link">Saiba Mais</a>
+        </div>
+      </div>
+    </section>
+    <div class="modal">
+      <h3 class="titulo"><span>Nosso</span> Endereço</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236366.95275515164!2d-54.95915225010426!3d-22.23121253181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9489a825ba544f99%3A0xd96ef82be62edddc!2sDourados%2C%20MS!5e0!3m2!1spt-BR!2sbr!4v1731027360359!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
